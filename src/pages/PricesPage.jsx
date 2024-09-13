@@ -7,7 +7,7 @@ export default function PricesPage() {
   const [option, setOption] = useState("0");
 
   return (
-    <div className="md:flex md:justify-between items-center align-middle pt-28 w-full mb-20 text-center md:text-left">
+    <div className="md:flex md:justify-between items-center align-middle pt-16 md:pt-28 w-full md:mb-20 text-center md:text-left">
       <div className="bg-white/50 backdrop-blur w-full p-10 flex justify-center">
         <div className="max-w-[1400px] w-full">
           <div className="flex justify-center">

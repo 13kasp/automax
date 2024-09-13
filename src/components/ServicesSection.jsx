@@ -166,12 +166,14 @@ function ServiceModalChildren({ title, modalimg, modaltext }) {
 
   return (
     <>
-      <div className={`text-white ${getBackgroundClass()} bg-cover h-80`}>
-        <div className="p-5 px-8 flex justify-between items-center gap-4 bg-black/50 backdrop-blur-lg ">
-          <div className="text-4xl font-bold">{title}</div>
+      <div
+        className={`text-white ${getBackgroundClass()} bg-cover h-52 md:h-80`}
+      >
+        <div className="p-2 md:p-50 px-4 md:px-8 flex justify-between items-center gap-2 md:gap-4 bg-black/50 backdrop-blur-lg ">
+          <div className="text-2xl md:text-4xl font-bold">{title}</div>
           <div>
             <span
-              className="text-6xl hover:cursor-pointer p-0"
+              className="text-5xl md:text-6xl hover:cursor-pointer p-0"
               onClick={() => {
                 onModalToggle(false);
               }}
@@ -182,34 +184,34 @@ function ServiceModalChildren({ title, modalimg, modaltext }) {
         </div>
       </div>
 
-      <div className="p-5 px-8 flex flex-col gap-4 mt-2">
-        <div className="text-xl max-w-[90%] flex flex-col gap-8 justify-between items-stretch">
+      <div className="p-3 md:p-5 px-5 md:px-8 flex flex-col gap-4 mt-2">
+        <div className="md:text-xl max-w-[90%] flex flex-col gap-8 justify-between items-stretch">
           <div>{modaltext}</div>
-          <div className="flex flex-col md:flex-row gap-3 md:gap-6 mb-3 w-full">
-            <div
-              className="mt-2 inline-block w-full md:w-fit"
-              onClick={() => {
-                onModalToggle(false);
-              }}
-            >
-              <Link to="rezervuoti">
-                <button className="w-full justify-center font-bold text-xl bg-lBlue text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-lBlue border-2 duration-200 flex gap-2 items-center">
-                  Rezervuoti dabar
-                </button>
-              </Link>
-            </div>
-            <div
-              className="mt-2 inline-block w-full md:w-fit"
-              onClick={() => {
-                onModalToggle(false);
-              }}
-            >
-              <Link to="kainos">
-                <button className="w-full justify-center font-bold text-xl bg-black text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-black border-2 duration-200 flex gap-2 items-center">
-                  Kainos
-                </button>
-              </Link>
-            </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-3 md:gap-6 mb-3 w-full">
+          <div
+            className="mt-2 inline-block w-full md:w-fit"
+            onClick={() => {
+              onModalToggle(false);
+            }}
+          >
+            <Link to="rezervuoti">
+              <button className="w-full justify-center font-bold text-xl bg-lBlue text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-lBlue border-2 duration-200 flex gap-2 items-center">
+                Rezervuoti dabar
+              </button>
+            </Link>
+          </div>
+          <div
+            className="mt-2 inline-block w-full md:w-fit"
+            onClick={() => {
+              onModalToggle(false);
+            }}
+          >
+            <Link to="kainos">
+              <button className="w-full justify-center font-bold text-xl bg-black text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-black border-2 duration-200 flex gap-2 items-center">
+                Kainos
+              </button>
+            </Link>
           </div>
         </div>
       </div>
