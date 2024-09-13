@@ -81,6 +81,7 @@ function ReviewsCarousel({ reviews, mobile = false }) {
           >
             <div className="flex justify-center">
               <img
+                referrerPolicy="no-referrer"
                 src={r.img}
                 alt=""
                 className={`h-[60px] ${reviews !== "google" && "rounded-full"}`}
