@@ -37,34 +37,34 @@ export const googleReviews = [
 export const facebookReviews = [
   {
     name: "Gintas",
-    img: "https://scontent.fvno8-1.fna.fbcdn.net/v/t39.30808-1/413863545_7802869466396620_7682141368915890024_n.jpg?stp=cp0_dst-jpg_s40x40&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=6bjSDgrscTQQ7kNvgHabtIO&_nc_ht=scontent.fvno8-1.fna&_nc_gid=AUU_i8tOY5ZwaVrcy0l9ZWB&oh=00_AYCv_Y7ylpWQ4HDqMicZuda4QdtT6EVDr91Zh3N54T6j_A&oe=66E20464",
+    img: "../../../../images/fb1.jpg",
     review:
       "Labai smagu atvažiuoti ir žinoti, kad visada darbas bus atliekamas puikiai. Esu labai patenkintas atliktu darbu. Malonūs darbuotojai, kokybiškai atliktas darbas bei labai patrauklios kainos verčia vis sugrįžti. Ačiū.",
     id: 3,
   },
   {
     name: "Audrius",
-    img: "https://scontent.fvno8-1.fna.fbcdn.net/v/t1.6435-1/131756661_3626047184098657_5551954455789981934_n.jpg?stp=c240.0.960.960a_cp0_dst-jpg_s40x40&_nc_cat=100&ccb=1-7&_nc_sid=e4545e&_nc_ohc=3_Z6sKyTfKoQ7kNvgH8B-2E&_nc_ht=scontent.fvno8-1.fna&oh=00_AYBovmdvs7t-hu59UEJBWdQk4F2rrMZXToyeGPM3K89AFA&oe=6703AAFB",
+    img: "../../../../images/fb2.jpg",
     review:
       "Profesionalios automobilių švaros paslaugos už konkurencingą kainą 👍🙂",
     id: 1,
   },
   {
     name: "Erika",
-    img: "https://scontent.fvno8-1.fna.fbcdn.net/v/t1.6435-1/49835408_10213741243389535_2736498705673748480_n.jpg?stp=cp0_dst-jpg_s40x40&_nc_cat=101&ccb=1-7&_nc_sid=e4545e&_nc_ohc=F0FtXYDSU2QQ7kNvgGtlGro&_nc_ht=scontent.fvno8-1.fna&_nc_gid=AUU_i8tOY5ZwaVrcy0l9ZWB&oh=00_AYBLRvHFvAvIWqN5D2s-IkwdjYk2XhyG_xs5jkGnSf04tw&oe=6703911E",
+    img: "../../../../images/fb3.jpg",
     review:
       "Puikiai atliktas cheminis valymas net neturint itin daug laiko tikrai rekomenduojame! Sugrįšime 🙂",
     id: 2,
   },
   {
     name: "Aurimas",
-    img: "https://scontent.fvno8-1.fna.fbcdn.net/v/t39.30808-1/436346577_7894096363935956_9078846017676072433_n.jpg?stp=c119.0.722.722a_cp0_dst-jpg_s40x40&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=t0Hak0-ZcugQ7kNvgFPYtmM&_nc_ht=scontent.fvno8-1.fna&_nc_gid=AoGDez6_VUK10n4wyZH1l7h&oh=00_AYAYLCVpcC7tLW5XJ2f-fLXrNpxxO-h3B0f5G25AW9toRg&oe=66E1F888",
+    img: "../../../../images/fb4.jpg",
     review: "Puikus darbas! Rekomenduoju! Greitai ir kokybiskai!",
     id: 4,
   },
   {
     name: "Roberta",
-    img: "https://scontent.fvno8-1.fna.fbcdn.net/v/t39.30808-1/440768324_2171968363167654_3949843174148354715_n.jpg?stp=cp0_dst-jpg_s40x40&_nc_cat=109&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=sNnNSfeFF7gQ7kNvgFmQEkw&_nc_ht=scontent.fvno8-1.fna&_nc_gid=AoGDez6_VUK10n4wyZH1l7h&oh=00_AYDvB3I-cnZLralJE1JRB1JEo2GwPa_zSFn8SspcghIaWQ&oe=66E20914",
+    img: "../../../../images/fb5.jpg",
     review:
       "Labai puikus aptarnavimas, kokybiskai atliktas darbas rekomenduoju, gryšiu dar karteli !!!🥰",
     id: 5,
