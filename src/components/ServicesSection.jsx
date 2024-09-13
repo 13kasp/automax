@@ -111,7 +111,7 @@ function ServiceDisplay({ title, list, img, modalimg, children }) {
 
   return (
     <div
-      className="text-left aspect-square border grid grid-rows-2 rounded-xl hover:cursor-pointer hover:scale-105 duration-150 overflow-hidden"
+      className="text-left md:aspect-square h-fit border md:grid flex md:grid-rows-2 flex-col rounded-xl hover:cursor-pointer hover:scale-105 duration-150 overflow-hidden"
       onClick={() => {
         onModalToggle(true);
         onSetModalChildren(
@@ -124,10 +124,13 @@ function ServiceDisplay({ title, list, img, modalimg, children }) {
       }}
     >
       <div className="overflow-hidden">
-        <img src={img} className="object-fill" />
+        <img
+          src={img}
+          className="object-cover md:object-fill h-36 md:h-auto w-full md:w-auto mb-2 md:mb-0"
+        />
       </div>
       <div className="p-4 pt-2 md:pt-4">
-        <div className="font-semibold text-xl md:text-2xl mb-1 md:mb-2 text-center">
+        <div className="font-semibold text-xl md:text-2xl mb-2 text-center">
           {title} &rarr;
         </div>
         <div>
@@ -182,27 +185,27 @@ function ServiceModalChildren({ title, modalimg, modaltext }) {
       <div className="p-5 px-8 flex flex-col gap-4 mt-2">
         <div className="text-xl max-w-[90%] flex flex-col gap-8 justify-between items-stretch">
           <div>{modaltext}</div>
-          <div className="flex gap-4 mb-3">
+          <div className="flex flex-col md:flex-row gap-3 md:gap-6 mb-3 w-full">
             <div
-              className="mt-2 inline-block"
+              className="mt-2 inline-block w-full md:w-fit"
               onClick={() => {
                 onModalToggle(false);
               }}
             >
               <Link to="rezervuoti">
-                <button className="justify-center font-bold text-xl bg-lBlue text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-lBlue border-2 duration-200 flex gap-2 items-center">
+                <button className="w-full justify-center font-bold text-xl bg-lBlue text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-lBlue border-2 duration-200 flex gap-2 items-center">
                   Rezervuoti dabar
                 </button>
               </Link>
             </div>
             <div
-              className="mt-2 inline-block"
+              className="mt-2 inline-block w-full md:w-fit"
               onClick={() => {
                 onModalToggle(false);
               }}
             >
               <Link to="kainos">
-                <button className="justify-center font-bold text-xl bg-black text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-black border-2 duration-200 flex gap-2 items-center">
+                <button className="w-full justify-center font-bold text-xl bg-black text-white p-3 rounded-lg px-6 hover:-translate-y-1 hover:bg-transparent hover:text-black border-black border-2 duration-200 flex gap-2 items-center">
                   Kainos
                 </button>
               </Link>

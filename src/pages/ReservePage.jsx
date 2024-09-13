@@ -4,7 +4,7 @@ export default function ReservePage() {
   return (
     <>
       <div className="md:flex md:justify-between items-center align-middle h-[90vh] w-full text-center md:text-left bg-cover bg-center bg-[url('/public/images/rezervuoti.png')]">
-        <div className="absolute top-[20%] md:top-80 bg-white/50 backdrop-blur w-full p-6 md:p-10 flex justify-center">
+        <div className="absolute top-56 md:top-80 bg-white/50 backdrop-blur w-full p-6 md:p-10 flex justify-center">
           <div className="max-w-[1400px] flex flex-col justify-center items-center gap-2">
             <h3 className="font-bold text-xl md:text-4xl text-black">
               Atnaujinkite savo automobilį - rezervuokite laiką dabar!
