@@ -29,7 +29,7 @@ export default function NavBar() {
             className={`pl-3 p-2 pr-6 lg:p-0 bg-white flex justify-between lg:static items-center duration-500 pointer-events-auto`}
           >
             <Logo
-              className="h-16 inline object-contain"
+              className="h-14 inline object-contain"
               onClick={() => {
                 setNavOpen(false);
                 document.body.classList.remove("modal-open");
