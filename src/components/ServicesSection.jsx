@@ -18,7 +18,7 @@ export default function ServicesSection() {
           <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-6 md:gap-14">
             <ServiceDisplay
               title="Automobilio plovimas"
-              img="../../../../images/plovimas.png"
+              img="../../../../images/plovimas.webp"
               list={[
                 "Kėbulo plovimas rankomis",
                 "Vaškavimas užtikrinantis ilgesnę švarą",
@@ -44,7 +44,7 @@ export default function ServicesSection() {
             </ServiceDisplay>
             <ServiceDisplay
               title="Salono valymas"
-              img="../../../../images/valymas.png"
+              img="../../../../images/valymas.webp"
               list={[
                 "Išskirtinė švara ir blizgesys",
                 "Atnaujinta salono spalva",
@@ -74,7 +74,7 @@ export default function ServicesSection() {
             </ServiceDisplay>
             <ServiceDisplay
               title="Kitos paslaugos"
-              img="../../../../images/kitospaslaugos.png"
+              img="../../../../images/kitospaslaugos.webp"
               list={[
                 "Kėbulo, lempų poliravimas",
                 "Langų valymas",
@@ -154,11 +154,11 @@ function ServiceModalChildren({ title, modalimg, modaltext }) {
   const getBackgroundClass = () => {
     switch (modalimg) {
       case "1":
-        return "bg-[url('/public/images/plovimasmodal.png')]";
+        return "bg-[url('/public/images/plovimasmodal.webp')]";
       case "2":
-        return "bg-[url('/public/images/valymasmodal.png')]";
+        return "bg-[url('/public/images/valymasmodal.webp')]";
       case "3":
-        return "bg-[url('/public/images/kitimodal.png')]";
+        return "bg-[url('/public/images/kitimodal.webp')]";
       default:
         return "bg-white"; // Fallback background
     }

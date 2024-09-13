@@ -18,7 +18,7 @@ export default function ReviewsSection() {
 
           <div className="flex flex-col items-center">
             <img
-              src="../../../../images/googlereviews.png"
+              src="../../../../images/googlereviews.webp"
               className="h-20 object-contain"
             />
             <a
@@ -35,7 +35,7 @@ export default function ReviewsSection() {
               <ReviewsCarousel reviews="google" />
             </div>
             <img
-              src="../../../../images/facebookreviews.png"
+              src="../../../../images/facebookreviews.webp"
               className="h-[4.5rem] object-contain mt-20 md:mt-0"
             />
             <a
@@ -90,7 +90,7 @@ function ReviewsCarousel({ reviews, mobile = false }) {
             <div className="flex flex-col justify-center items-center gap-2">
               <p className="font-semibold text-center mt-2">{r.name}</p>
               <img
-                src="../../../../images/5stars.png"
+                src="../../../../images/5stars.webp"
                 className="h-7 object-contain my-1"
               />
               <p className="text-center">{r.review}</p>

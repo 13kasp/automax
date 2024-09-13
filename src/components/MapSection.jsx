@@ -22,7 +22,7 @@ export default function MapSection() {
               <div className="flex gap-4 items-center align-middle text-xl md:text-2xl ">
                 Liepų g. 54b Klaipėda
                 <img
-                  src="../../../../images/gmapslogo.png"
+                  src="../../../../images/gmapslogo.webp"
                   className="h-8 md:h-10 align-middle"
                 />
               </div>
@@ -46,7 +46,7 @@ function Map() {
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.webp"
       />
       <Marker position={[55.715571, 21.146443]}>
         <Popup>

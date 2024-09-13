@@ -26,7 +26,7 @@ export default function ContactsFooter() {
           </p>
           <div className={`flex justify-center items-center gap-3 mb-2`}>
             <img
-              src="../../../../images/facebookicon.png"
+              src="../../../../images/facebookicon.webp"
               className="h-5"
               alt="tel."
             />

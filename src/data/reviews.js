@@ -37,34 +37,34 @@ export const googleReviews = [
 export const facebookReviews = [
   {
     name: "Gintas",
-    img: "../../../../images/fb1.jpg",
+    img: "../../../../images/fb1.webp",
     review:
       "Labai smagu atvažiuoti ir žinoti, kad visada darbas bus atliekamas puikiai. Esu labai patenkintas atliktu darbu. Malonūs darbuotojai, kokybiškai atliktas darbas bei labai patrauklios kainos verčia vis sugrįžti. Ačiū.",
     id: 3,
   },
   {
     name: "Audrius",
-    img: "../../../../images/fb2.jpg",
+    img: "../../../../images/fb2.webp",
     review:
       "Profesionalios automobilių švaros paslaugos už konkurencingą kainą 👍🙂",
     id: 1,
   },
   {
     name: "Erika",
-    img: "../../../../images/fb3.jpg",
+    img: "../../../../images/fb3.webp",
     review:
       "Puikiai atliktas cheminis valymas net neturint itin daug laiko tikrai rekomenduojame! Sugrįšime 🙂",
     id: 2,
   },
   {
     name: "Aurimas",
-    img: "../../../../images/fb4.jpg",
+    img: "../../../../images/fb4.webp",
     review: "Puikus darbas! Rekomenduoju! Greitai ir kokybiskai!",
     id: 4,
   },
   {
     name: "Roberta",
-    img: "../../../../images/fb5.jpg",
+    img: "../../../../images/fb5.webp",
     review:
       "Labai puikus aptarnavimas, kokybiskai atliktas darbas rekomenduoju, gryšiu dar karteli !!!🥰",
     id: 5,
