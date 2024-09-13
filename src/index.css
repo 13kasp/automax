@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.leaflet-popup-content-wrapper {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  padding: 2px;
+}
+
+.leaflet-popup-content {
+  color: #333;
+  font-size: 14px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-prev::before,
+.slick-prev:hover {
+  z-index: 1;
+  color: #d6d6d6;
+}
+
+.slick-next::before,
+.slick-next:hover {
+  z-index: 1;
+  color: #d6d6d6;
+}
+
+.slick-dots li {
+  position: relative;
+  top: 10px;
+}
