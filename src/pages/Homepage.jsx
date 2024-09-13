@@ -13,7 +13,9 @@ export default function Homepage() {
       <Hero />
       <ServicesSection />
       <MapSection />
-      <ReviewsSection />
+      <div className="mb-16 md:mb-0">
+        <ReviewsSection />
+      </div>
     </>
   );
 }
