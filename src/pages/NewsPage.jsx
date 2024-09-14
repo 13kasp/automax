@@ -63,10 +63,6 @@ export default function NewsPage() {
 
   return (
     <div className="py-28 pb-20">
-      <div className={isLoading ? "" : "hidden"}>
-        <div className="z-50 w-full h-full fixed bg-white"></div>
-        <LoadingSpinner extraStyles="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-50 border-lBlue" />
-      </div>
       <div className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
         <div className="bg-white w-full p-6 md:p-10 flex justify-center">
           <div className="md:max-w-[1400px] md:w-full">
@@ -77,6 +73,13 @@ export default function NewsPage() {
               >
                 Naujienos
               </GradientText>
+            </div>
+            <div
+              className={`${
+                isLoading ? "" : "hidden"
+              } justify-center w-full flex py-32`}
+            >
+              <LoadingSpinner extraStyles="bg-white border-lBlue" />
             </div>
             <div className="flex flex-col gap-6 md:gap-14">
               {posts.map((post) => (
