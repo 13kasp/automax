@@ -3,12 +3,13 @@ import client from "../client";
 import { useEffect, useState } from "react";
 import SanityBlockContent from "@sanity/block-content-to-react";
 import LoadingSpinner from "../components/LoadingSpinner";
+import compressFetchedImage from "../compress.js";
 
 export default function NewsPage() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const query = `*[_type == "post"] {
+  const query = `*[_type == "post"] | order(publishedAt) {
         title,
         slug,
         body,
@@ -28,7 +29,21 @@ export default function NewsPage() {
     const fetchPosts = async () => {
       try {
         const data = await client.fetch(query);
-        setPosts(data);
+
+        // Compress images and then update the state
+        const compressedData = await Promise.all(
+          data.map(async (post) => {
+            const compressedImg = await compressFetchedImage(
+              post.mainImage.asset.url
+            );
+            return {
+              ...post, // Keep the rest of the post properties
+              compressedImg, // Add compressed image URL
+            };
+          })
+        );
+
+        setPosts(compressedData); // Update state with posts having compressed images
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching posts:", error);
@@ -71,11 +86,16 @@ export default function NewsPage() {
                   className="text-left h-fit border flex flex-col md:flex-row gap-6 md:gap-10 rounded-xl duration-150 overflow-hidden p-4 md:p-6"
                 >
                   <div className="w-fit h-full">
-                    <img
-                      src={post.mainImage.asset.url}
-                      alt={post.title}
-                      className="rounded-lg aspect-square w-auto md:max-w-[24rem]"
-                    />
+                    {post.compressedImg ? (
+                      <img
+                        src={post.compressedImg} // Use the compressed image URL
+                        alt={post.title}
+                        className="rounded-lg aspect-square w-auto md:max-w-[24rem]"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="placeholder">Loading Image...</div>
+                    )}
                   </div>
                   <div className="flex flex-col gap-6 h-full">
                     <div className="flex flex-col md:flex-row md:justify-between">
