@@ -9,7 +9,7 @@ export default function NewsPage() {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const query = `*[_type == "post"] | order(publishedAt) {
+  const query = `*[_type == "post"] | order(publishedAt desc) {
         title,
         slug,
         body,
@@ -30,20 +30,19 @@ export default function NewsPage() {
       try {
         const data = await client.fetch(query);
 
-        // Compress images and then update the state
         const compressedData = await Promise.all(
           data.map(async (post) => {
             const compressedImg = await compressFetchedImage(
               post.mainImage.asset.url
             );
             return {
-              ...post, // Keep the rest of the post properties
-              compressedImg, // Add compressed image URL
+              ...post,
+              compressedImg,
             };
           })
         );
 
-        setPosts(compressedData); // Update state with posts having compressed images
+        setPosts(compressedData);
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching posts:", error);
