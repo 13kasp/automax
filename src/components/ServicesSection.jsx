@@ -127,7 +127,6 @@ function ServiceDisplay({ title, list, img, modalimg, children }) {
         <img
           src={img}
           className="object-cover md:object-fill h-36 md:h-auto w-full md:w-auto mb-2 md:mb-0"
-          loading="lazy"
         />
       </div>
       <div className="p-4 pt-2 md:pt-4">

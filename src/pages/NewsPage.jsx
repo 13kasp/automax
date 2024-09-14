@@ -90,7 +90,6 @@ export default function NewsPage() {
                         src={post.compressedImg} // Use the compressed image URL
                         alt={post.title}
                         className="rounded-lg aspect-square w-auto md:max-w-[24rem]"
-                        loading="lazy"
                       />
                     ) : (
                       <div className="placeholder">Loading Image...</div>
