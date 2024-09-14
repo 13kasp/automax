@@ -128,6 +128,15 @@ export default function NavBar() {
                 <NavLink to="/kainos">KAINOS</NavLink>
               </li>
               <li
+                className={liStyles}
+                onClick={() => {
+                  setNavOpen(false);
+                  document.body.classList.remove("modal-open");
+                }}
+              >
+                <NavLink to="/naujienos">NAUJIENOS</NavLink>
+              </li>
+              <li
                 onClick={() => {
                   setNavOpen(false);
                   document.body.classList.remove("modal-open");

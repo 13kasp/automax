@@ -13,6 +13,7 @@ import ReviewsPage from "./pages/ReviewsPage";
 import ContactsPage from "./pages/ContactsPage";
 import PricesPage from "./pages/PricesPage";
 import ReservePage from "./pages/ReservePage";
+import NewsPage from "./pages/NewsPage";
 
 export default function App() {
   const [pageLoading, setPageLoading] = useState(true);
@@ -31,7 +32,7 @@ export default function App() {
         <ScrollToTop />
         <div className={pageLoading ? "" : "hidden"}>
           <div className="z-50 w-full h-full fixed bg-white"></div>
-          <LoadingSpinner extraStyles="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-50 border-oRed" />
+          <LoadingSpinner extraStyles="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-50 border-lBlue" />
         </div>
         <NavBar />
         <Modal />
@@ -121,6 +122,17 @@ export default function App() {
                 key={Math.random()}
               >
                 <ReservePage />
+              </div>
+            }
+          />
+          <Route
+            path="naujienos"
+            element={
+              <div
+                className="opacity-0 -translate-y-16 animate-pageLoadIn"
+                key={Math.random()}
+              >
+                <NewsPage />
               </div>
             }
           />
