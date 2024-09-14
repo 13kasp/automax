@@ -20,7 +20,7 @@ export default function PricesPage() {
           </div>
           <div className="flex flex-col md:flex-row justify-center my-8 md:my-12 gap-12 mb-20 w-full">
             <div className="flex flex-col border p-2 h-fit gap-2 whitespace-nowrap">
-              <span className="p-2">Automobilio tipas</span>
+              <span className="p-2 font-semibold">Automobilio tipas</span>
               <select
                 value={option}
                 className="p-2 border focus:outline-none"
