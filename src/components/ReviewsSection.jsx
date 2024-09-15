@@ -20,6 +20,7 @@ export default function ReviewsSection() {
             <img
               src="../../../../images/googlereviews.webp"
               className="h-20 object-contain"
+              alt="google reviews"
             />
             <a
               className="border rounded-full p-2 px-5 mt-2"
@@ -37,6 +38,7 @@ export default function ReviewsSection() {
             <img
               src="../../../../images/facebookreviews.webp"
               className="h-[4.5rem] object-contain mt-20 md:mt-0"
+              alt="facebook reviews"
             />
             <a
               className="border rounded-full p-2 px-5 mt-2"
@@ -82,7 +84,7 @@ function ReviewsCarousel({ reviews, mobile = false }) {
             <div className="flex justify-center">
               <img
                 src={r.img}
-                alt=""
+                alt="profile img"
                 className={`h-[60px] ${reviews !== "google" && "rounded-full"}`}
               />
             </div>
@@ -91,6 +93,7 @@ function ReviewsCarousel({ reviews, mobile = false }) {
               <p className="font-semibold text-center mt-2">{r.name}</p>
               <img
                 src="../../../../images/5stars.webp"
+                alt="5 stars rating"
                 className="h-7 object-contain my-1"
               />
               <p className="text-center">{r.review}</p>

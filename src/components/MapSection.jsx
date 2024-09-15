@@ -24,6 +24,7 @@ export default function MapSection() {
                 <img
                   src="../../../../images/gmapslogo.webp"
                   className="h-8 md:h-10 align-middle"
+                  alt="location"
                 />
               </div>
             </a>

@@ -126,6 +126,7 @@ function ServiceDisplay({ title, list, img, modalimg, children }) {
       <div className="overflow-hidden">
         <img
           src={img}
+          alt="service"
           className="object-cover md:object-fill h-36 md:h-auto w-full md:w-auto mb-2 md:mb-0"
         />
       </div>
