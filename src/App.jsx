@@ -220,6 +220,16 @@ export default function App() {
           />
         </Routes>
         <ContactsFooter />
+        <div className="bg-neutral-100 flex justify-center pb-10">
+          <p className="inline mr-1.5">Tinklalapį sukūrė:</p>
+          <a
+            href="https://kasparas.dev"
+            className="inline underline"
+            target="_blank"
+          >
+            kasparas.dev
+          </a>
+        </div>
       </BrowserRouter>
     </ModalProvider>
   );
