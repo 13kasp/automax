@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useModal } from "../context/ModalContext";
-import GradientText from "./GradientText";
 
 export default function ServicesSection() {
   return (
@@ -8,12 +7,9 @@ export default function ServicesSection() {
       <div className="bg-white w-full p-6 md:p-10 flex justify-center">
         <div className="md:max-w-[1400px] md:w-full">
           <div className="flex justify-center md:mb-10">
-            <GradientText
-              type="h1"
-              extraStyles="text-4xl md:text-5xl font-semibold mb-6 mt-2"
-            >
+            <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
               Mūsų paslaugos
-            </GradientText>
+            </h2>
           </div>
           <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] gap-6 md:gap-14">
             <ServiceDisplay

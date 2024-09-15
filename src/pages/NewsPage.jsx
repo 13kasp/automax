@@ -1,4 +1,3 @@
-import GradientText from "../components/GradientText";
 import client from "../client";
 import { useEffect, useState } from "react";
 import SanityBlockContent from "@sanity/block-content-to-react";
@@ -67,12 +66,9 @@ export default function NewsPage() {
         <div className="bg-white w-full p-6 md:p-10 flex justify-center">
           <div className="md:max-w-[1400px] md:w-full">
             <div className="flex justify-center mb-8 md:mb-14">
-              <GradientText
-                type="h1"
-                extraStyles="text-center text-3xl md:text-5xl font-semibold"
-              >
+              <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
                 Naujienos
-              </GradientText>
+              </h2>
             </div>
             <div
               className={`${

@@ -1,5 +1,4 @@
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
-import GradientText from "./GradientText";
 
 export default function MapSection() {
   return (
@@ -7,12 +6,9 @@ export default function MapSection() {
       <div className="bg-white w-full p-6 md:p-10 pb-0 flex justify-center">
         <div className="max-w-[1400px] w-full">
           <div className="flex flex-col items-center md:mb-10">
-            <GradientText
-              type="h1"
-              extraStyles="text-3xl md:text-5xl font-semibold mt-6"
-            >
+            <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
               Mus rasite
-            </GradientText>
+            </h2>
 
             <a
               href="https://maps.app.goo.gl/rCVotPsRr5TuX5oL6"

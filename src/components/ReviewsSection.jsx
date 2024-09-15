@@ -1,5 +1,4 @@
 import Slider from "react-slick";
-import GradientText from "./GradientText";
 import { googleReviews, facebookReviews } from "../data/reviews";
 
 export default function ReviewsSection() {
@@ -8,12 +7,9 @@ export default function ReviewsSection() {
       <div className="bg-white w-full p-10 flex justify-center">
         <div className="max-w-[1400px] w-full">
           <div className="flex justify-center mb-4 md:mb-10">
-            <GradientText
-              type="h1"
-              extraStyles="text-3xl md:text-5xl font-semibold mt-6"
-            >
+            <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
               Atsiliepimai
-            </GradientText>
+            </h2>
           </div>
 
           <div className="flex flex-col items-center">

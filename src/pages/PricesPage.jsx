@@ -1,5 +1,4 @@
 import { useState } from "react";
-import GradientText from "../components/GradientText";
 
 import { pagrindines, papildomos } from "../data/kainos";
 
@@ -11,12 +10,9 @@ export default function PricesPage() {
       <div className="bg-white/50 backdrop-blur w-full p-10 flex justify-center">
         <div className="max-w-[1400px] w-full">
           <div className="flex justify-center">
-            <GradientText
-              type="h1"
-              extraStyles="text-3xl md:text-5xl font-semibold"
-            >
+            <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
               Pagrindinės paslaugos
-            </GradientText>
+            </h2>
           </div>
           <div className="flex flex-col md:flex-row justify-center my-8 md:my-12 gap-12 mb-20 w-full">
             <div className="flex flex-col border p-2 h-fit gap-2 whitespace-nowrap">
@@ -62,12 +58,9 @@ export default function PricesPage() {
             </table>
           </div>
           <div className="flex justify-center">
-            <GradientText
-              type="h1"
-              extraStyles="text-3xl md:text-5xl font-semibold"
-            >
+            <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
               Papildomos paslaugos
-            </GradientText>
+            </h2>
           </div>
           <div className="flex justify-center my-8 md:my-12 mb-0 md:mb-20 w-full">
             <table className="w-full">
