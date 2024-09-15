@@ -8,11 +8,12 @@ export default function PricesPage() {
   return (
     <section className="md:flex md:justify-between items-center align-middle pt-16 md:pt-28 w-full md:mb-20 text-center md:text-left">
       <div className="bg-white/50 backdrop-blur w-full p-10 flex justify-center">
-        <div className="max-w-[1400px] w-full">
-          <div className="flex justify-center">
+        <div className="max-w-[1200px] w-full">
+          <div className="flex justify-center flex-col items-center gap-6">
             <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
               Pagrindinės paslaugos
             </h2>
+            <p className="text-xl">Visos kainos pateikiamos su PVM</p>
           </div>
           <div className="flex flex-col md:flex-row justify-center my-8 md:my-12 gap-12 mb-20 w-full">
             <div className="flex flex-col border p-2 h-fit gap-2 whitespace-nowrap">
@@ -33,7 +34,7 @@ export default function PricesPage() {
               <thead>
                 <tr>
                   <th className="border p-2">Paslauga</th>
-                  <th className="border p-2">Kaina</th>
+                  <th className="border p-2 whitespace-nowrap">Kaina</th>
                 </tr>
               </thead>
               <tbody>
@@ -47,7 +48,7 @@ export default function PricesPage() {
                         </span>
                       ))}
                     </td>
-                    <td className="border p-2">
+                    <td className="border p-2 whitespace-nowrap">
                       {option === "0" && pagrindines[key][0]}
                       {option === "1" && pagrindines[key][1]}
                       {option === "2" && pagrindines[key][2]} EUR
@@ -57,10 +58,11 @@ export default function PricesPage() {
               </tbody>
             </table>
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center flex-col gap-6 items-center">
             <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
               Papildomos paslaugos
             </h2>
+            <p className="text-xl">Visos kainos pateikiamos su PVM</p>
           </div>
           <div className="flex justify-center my-8 md:my-12 mb-0 md:mb-20 w-full">
             <table className="w-full">
