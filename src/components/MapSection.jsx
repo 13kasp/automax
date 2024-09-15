@@ -42,7 +42,7 @@ function Map() {
       className="h-[26rem] md:h-[36rem] w-full rounded-xl"
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution=""
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={[55.715571, 21.146443]}>
