@@ -62,7 +62,7 @@ export default function NewsPage() {
   }
 
   return (
-    <div className="py-28 pb-20">
+    <section className="py-28 pb-20">
       <div className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
         <div className="bg-white w-full p-6 md:p-10 flex justify-center">
           <div className="md:max-w-[1400px] md:w-full">
@@ -120,6 +120,6 @@ export default function NewsPage() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

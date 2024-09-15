@@ -4,7 +4,7 @@ import { googleReviews, facebookReviews } from "../data/reviews";
 
 export default function ReviewsSection() {
   return (
-    <div className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
+    <section className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
       <div className="bg-white w-full p-10 flex justify-center">
         <div className="max-w-[1400px] w-full">
           <div className="flex justify-center mb-4 md:mb-10">
@@ -54,7 +54,7 @@ export default function ReviewsSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

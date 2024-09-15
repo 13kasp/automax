@@ -10,16 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@portabletext/react": "^3.1.0",
     "@sanity/block-content-to-react": "^3.0.0",
     "@sanity/client": "^6.21.3",
     "browser-image-compression": "^2.0.2",
-    "canvas": "^2.11.2",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",
-    "react-portable-text": "^0.6.0",
     "react-router-dom": "^6.26.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"

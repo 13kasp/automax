@@ -3,7 +3,7 @@ import GradientText from "./GradientText";
 
 export default function MapSection() {
   return (
-    <div className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
+    <section className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
       <div className="bg-white w-full p-6 md:p-10 pb-0 flex justify-center">
         <div className="max-w-[1400px] w-full">
           <div className="flex flex-col items-center md:mb-10">
@@ -32,7 +32,7 @@ export default function MapSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

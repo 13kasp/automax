@@ -4,7 +4,7 @@ import GradientText from "./GradientText";
 
 export default function ServicesSection() {
   return (
-    <div className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
+    <section className="md:flex md:justify-between items-center align-middle w-full text-center md:text-left">
       <div className="bg-white w-full p-6 md:p-10 flex justify-center">
         <div className="md:max-w-[1400px] md:w-full">
           <div className="flex justify-center md:mb-10">
@@ -102,7 +102,7 @@ export default function ServicesSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
