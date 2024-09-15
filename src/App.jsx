@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { ModalProvider } from "./context/ModalContext";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
@@ -7,13 +7,21 @@ import Modal from "./components/Modal";
 import Homepage from "./pages/Homepage";
 import NavBar from "./components/NavBar";
 import ContactsFooter from "./components/ContactsFooter";
-import ServicesPage from "./pages/ServicesPage";
-import LocationPage from "./pages/LocationPage";
-import ReviewsPage from "./pages/ReviewsPage";
-import ContactsPage from "./pages/ContactsPage";
-import PricesPage from "./pages/PricesPage";
-import ReservePage from "./pages/ReservePage";
-import NewsPage from "./pages/NewsPage";
+//import ServicesPage from "./pages/ServicesPage";
+//import LocationPage from "./pages/LocationPage";
+//import ReviewsPage from "./pages/ReviewsPage";
+//import ContactsPage from "./pages/ContactsPage";
+//import PricesPage from "./pages/PricesPage";
+//import ReservePage from "./pages/ReservePage";
+//import NewsPage from "./pages/NewsPage";
+
+const LazyServicesPage = React.lazy(() => import("./pages/ServicesPage"));
+const LazyLocationPage = React.lazy(() => import("./pages/LocationPage"));
+const LazyReviewsPage = React.lazy(() => import("./pages/ReviewsPage"));
+const LazyContactsPage = React.lazy(() => import("./pages/ContactsPage"));
+const LazyPricesPage = React.lazy(() => import("./pages/PricesPage"));
+const LazyReservePage = React.lazy(() => import("./pages/ReservePage"));
+const LazyNewsPage = React.lazy(() => import("./pages/NewsPage"));
 
 export default function App() {
   const [pageLoading, setPageLoading] = useState(true);
@@ -66,7 +74,15 @@ export default function App() {
                 className="opacity-0 -translate-y-16 animate-pageLoadIn"
                 key={Math.random()}
               >
-                <ServicesPage />
+                <Suspense
+                  fallback={
+                    <div className="justify-center w-full flex py-32">
+                      <LoadingSpinner extraStyles="bg-white border-lBlue" />
+                    </div>
+                  }
+                >
+                  <LazyServicesPage />
+                </Suspense>
               </div>
             }
           />
@@ -77,7 +93,15 @@ export default function App() {
                 className="opacity-0 -translate-y-16 animate-pageLoadIn"
                 key={Math.random()}
               >
-                <LocationPage />
+                <Suspense
+                  fallback={
+                    <div className="justify-center w-full flex py-32">
+                      <LoadingSpinner extraStyles="bg-white border-lBlue" />
+                    </div>
+                  }
+                >
+                  <LazyLocationPage />
+                </Suspense>
               </div>
             }
           />
@@ -88,7 +112,15 @@ export default function App() {
                 className="opacity-0 -translate-y-16 animate-pageLoadIn"
                 key={Math.random()}
               >
-                <ReviewsPage />
+                <Suspense
+                  fallback={
+                    <div className="justify-center w-full flex py-32">
+                      <LoadingSpinner extraStyles="bg-white border-lBlue" />
+                    </div>
+                  }
+                >
+                  <LazyReviewsPage />
+                </Suspense>
               </div>
             }
           />
@@ -99,7 +131,15 @@ export default function App() {
                 className="opacity-0 -translate-y-16 animate-pageLoadIn"
                 key={Math.random()}
               >
-                <ContactsPage />
+                <Suspense
+                  fallback={
+                    <div className="justify-center w-full flex py-32">
+                      <LoadingSpinner extraStyles="bg-white border-lBlue" />
+                    </div>
+                  }
+                >
+                  <LazyContactsPage />
+                </Suspense>
               </div>
             }
           />
@@ -110,7 +150,15 @@ export default function App() {
                 className="opacity-0 -translate-y-16 animate-pageLoadIn"
                 key={Math.random()}
               >
-                <PricesPage />
+                <Suspense
+                  fallback={
+                    <div className="justify-center w-full flex py-32">
+                      <LoadingSpinner extraStyles="bg-white border-lBlue" />
+                    </div>
+                  }
+                >
+                  <LazyPricesPage />
+                </Suspense>
               </div>
             }
           />
@@ -121,7 +169,15 @@ export default function App() {
                 className="opacity-0 -translate-y-16 animate-pageLoadIn"
                 key={Math.random()}
               >
-                <ReservePage />
+                <Suspense
+                  fallback={
+                    <div className="justify-center w-full flex py-32">
+                      <LoadingSpinner extraStyles="bg-white border-lBlue" />
+                    </div>
+                  }
+                >
+                  <LazyReservePage />
+                </Suspense>
               </div>
             }
           />
@@ -132,7 +188,15 @@ export default function App() {
                 className="opacity-0 -translate-y-16 animate-pageLoadIn"
                 key={Math.random()}
               >
-                <NewsPage />
+                <Suspense
+                  fallback={
+                    <div className="justify-center w-full flex py-32">
+                      <LoadingSpinner extraStyles="bg-white border-lBlue" />
+                    </div>
+                  }
+                >
+                  <LazyNewsPage />
+                </Suspense>
               </div>
             }
           />

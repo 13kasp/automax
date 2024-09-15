@@ -7,7 +7,7 @@ export default function ServicesSection() {
       <div className="bg-white w-full p-6 md:p-10 flex justify-center">
         <div className="md:max-w-[1400px] md:w-full">
           <div className="flex justify-center md:mb-10">
-            <h2 className="text-3xl md:text-5xl font-semibold mt-6 text-lBlue">
+            <h2 className="text-3xl md:text-5xl font-semibold my-6 text-lBlue">
               Mūsų paslaugos
             </h2>
           </div>
