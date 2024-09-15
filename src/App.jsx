@@ -201,6 +201,13 @@ export default function App() {
             }
           />
           <Route
+            path="/admin"
+            Component={() => {
+              window.location.href = "https://automax.sanity.studio/structure";
+              return null;
+            }}
+          />
+          <Route
             path="*"
             element={
               <div

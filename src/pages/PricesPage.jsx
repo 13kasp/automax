@@ -33,7 +33,7 @@ export default function PricesPage() {
               <thead>
                 <tr>
                   <th className="border p-2">Paslauga</th>
-                  <th className="border p-2">Mokestis</th>
+                  <th className="border p-2">Kaina</th>
                 </tr>
               </thead>
               <tbody>
@@ -67,7 +67,7 @@ export default function PricesPage() {
               <thead>
                 <tr>
                   <th className="border p-2">Paslauga</th>
-                  <th className="border p-2">Mokestis</th>
+                  <th className="border p-2">Kaina</th>
                 </tr>
               </thead>
               <tbody>
