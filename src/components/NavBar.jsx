@@ -67,8 +67,8 @@ export default function NavBar() {
           <div
             className={`p-6 pt-0 lg:p-0 -translate-y-16 lg:-translate-y-0 z-10 ${
               navOpen
-                ? "animate-navBarOpen lg:animate-none"
-                : "animate-navBarClose lg:animate-none"
+                ? "block animate-navBarOpen lg:animate-none"
+                : "hidden lg:block animate-navBarClose lg:animate-none"
             }`}
             key={"rerender"}
           >

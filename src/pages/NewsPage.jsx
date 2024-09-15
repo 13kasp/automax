@@ -90,7 +90,7 @@ export default function NewsPage() {
                   <div className="w-fit h-full">
                     {post.compressedImg ? (
                       <img
-                        src={post.compressedImg} // Use the compressed image URL
+                        src={post.compressedImg}
                         alt={post.title}
                         className="rounded-lg aspect-square w-auto md:max-w-[24rem]"
                       />
