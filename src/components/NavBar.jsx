@@ -89,6 +89,25 @@ export default function NavBar() {
                   document.body.classList.remove("modal-open");
                 }}
               >
+                <NavLink to="/naujienos">NAUJIENOS</NavLink>
+              </li>
+              <li
+                onClick={() => {
+                  setNavOpen(false);
+                  document.body.classList.remove("modal-open");
+                }}
+              >
+                <NavLink to="/rezervuoti">
+                  <button className={liSpecialStyles}>REZERVUOTI</button>
+                </NavLink>
+              </li>
+              <li
+                className={liStyles}
+                onClick={() => {
+                  setNavOpen(false);
+                  document.body.classList.remove("modal-open");
+                }}
+              >
                 <NavLink to="/paslaugos">PASLAUGOS</NavLink>
               </li>
               <li
@@ -107,6 +126,15 @@ export default function NavBar() {
                   document.body.classList.remove("modal-open");
                 }}
               >
+                <NavLink to="/kainos">KAINOS</NavLink>
+              </li>
+              <li
+                className={liStyles}
+                onClick={() => {
+                  setNavOpen(false);
+                  document.body.classList.remove("modal-open");
+                }}
+              >
                 <NavLink to="/atsiliepimai">ATSILIEPIMAI</NavLink>
               </li>
               <li
@@ -117,34 +145,6 @@ export default function NavBar() {
                 }}
               >
                 <NavLink to="/kontaktai">KONTAKTAI</NavLink>
-              </li>
-              <li
-                className={liStyles}
-                onClick={() => {
-                  setNavOpen(false);
-                  document.body.classList.remove("modal-open");
-                }}
-              >
-                <NavLink to="/kainos">KAINOS</NavLink>
-              </li>
-              <li
-                className={liStyles}
-                onClick={() => {
-                  setNavOpen(false);
-                  document.body.classList.remove("modal-open");
-                }}
-              >
-                <NavLink to="/naujienos">NAUJIENOS</NavLink>
-              </li>
-              <li
-                onClick={() => {
-                  setNavOpen(false);
-                  document.body.classList.remove("modal-open");
-                }}
-              >
-                <NavLink to="/rezervuoti">
-                  <button className={liSpecialStyles}>REZERVUOTI</button>
-                </NavLink>
               </li>
             </ul>
           </div>

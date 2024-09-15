@@ -6,7 +6,7 @@ export const pagrindines = {
     [25, 28, "nuo 20"],
   "KOMPLEKTAS: \n\nPilnas kebulo plovimas: \n• Pilnas kėbulo sausinimas \n• Durelių ir bagažinės tarpų valymas \n• Kėbulo įtrinimas vašku \n• Ratlankių plovimas \n• Veidrodėlių, rankenėlių išpūtinėjimas \n\nSalono valymas: \n• Salono valymas/siurbimas \n• Kilimėlių valymas \n• Langų valymas \n• Bagažinės valymas/siurbimas \n• Dulkių išpūtinėjimas":
     [60, 65, "nuo 40"],
-  "MAX KOMPLEKTAS: \n\nPilnas kėbulo plovimas: \n• Pilnas kėbulo sausinimas \n• Durelių ir bagažinės tarpų valymas \n• Langų įtrinimas vašku \n• Ratlankių plovimas \n• Padangų juodinimas \n• Veidrodėlių, Tankenėlių išpūtinėjimas \n\nSalono valymas: \n• Salono valymas/siurbimas \n• Kilimėlių valymas \n• Langų valymas \n• Bagažinės valymas/siurbimas \n• Dulkių išpūtinėjimas \n• Panelės ir plastikinių detalių atnaujinimas \n• Sėdynių inpregnavimas":
+  "MAX KOMPLEKTAS: \n\nPilnas kėbulo plovimas: \n• Pilnas kėbulo sausinimas \n• Durelių ir bagažinės tarpų valymas \n• Langų įtrinimas vašku \n• Ratlankių plovimas \n• Padangų juodinimas \n• Veidrodėlių, rankenėlių išpūtinėjimas \n\nSalono valymas: \n• Salono valymas/siurbimas \n• Kilimėlių valymas \n• Langų valymas \n• Bagažinės valymas/siurbimas \n• Dulkių išpūtinėjimas \n• Panelės ir plastikinių detalių atnaujinimas \n• Sėdynių impregnavimas":
     [75, 80, "nuo 75"],
 };
 
