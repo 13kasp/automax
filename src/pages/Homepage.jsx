@@ -25,11 +25,6 @@ export default function Homepage() {
 function Hero() {
   return (
     <>
-      <img
-        src="../../../images/homepagebg.webp"
-        alt="bg"
-        className="w-[100vw] h-[100vh] absolute -z-10 top-16 right-0 object-cover"
-      />
       <div className="md:flex md:justify-between items-center align-middle pt-40 md:pt-72 w-full mb-32 md:mb-64 text-center md:text-left">
         <header className="bg-white/50 backdrop-blur w-full p-6 md:p-10 flex justify-center">
           <div className="max-w-[1400px] flex flex-col items-center">
