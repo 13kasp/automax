@@ -92,16 +92,6 @@ export default function NavBar() {
                 <NavLink to="/naujienos">NAUJIENOS</NavLink>
               </li>
               <li
-                onClick={() => {
-                  setNavOpen(false);
-                  document.body.classList.remove("modal-open");
-                }}
-              >
-                <NavLink to="/rezervuoti">
-                  <button className={liSpecialStyles}>REZERVUOTI</button>
-                </NavLink>
-              </li>
-              <li
                 className={liStyles}
                 onClick={() => {
                   setNavOpen(false);
@@ -117,7 +107,7 @@ export default function NavBar() {
                   document.body.classList.remove("modal-open");
                 }}
               >
-                <NavLink to="/vieta">VIETA</NavLink>
+                <NavLink to="/kainos">KAINOS</NavLink>
               </li>
               <li
                 className={liStyles}
@@ -126,7 +116,7 @@ export default function NavBar() {
                   document.body.classList.remove("modal-open");
                 }}
               >
-                <NavLink to="/kainos">KAINOS</NavLink>
+                <NavLink to="/vieta">VIETA</NavLink>
               </li>
               <li
                 className={liStyles}
@@ -145,6 +135,16 @@ export default function NavBar() {
                 }}
               >
                 <NavLink to="/kontaktai">KONTAKTAI</NavLink>
+              </li>
+              <li
+                onClick={() => {
+                  setNavOpen(false);
+                  document.body.classList.remove("modal-open");
+                }}
+              >
+                <NavLink to="/rezervuoti">
+                  <button className={liSpecialStyles}>REZERVUOTI</button>
+                </NavLink>
               </li>
             </ul>
           </div>
