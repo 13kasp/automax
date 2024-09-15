@@ -2,13 +2,61 @@ import { Link } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import React, { Suspense } from "react";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 //import ServicesSection from "../components/ServicesSection";
 //import MapSection from "../components/MapSection";
 //import ReviewsSection from "../components/ReviewsSection";
 
+const LazyServicesSection = React.lazy(() =>
+  import("../components/ServicesSection")
+);
+const LazyMapSection = React.lazy(() => import("../components/MapSection"));
+const LazyReviewsSection = React.lazy(() =>
+  import("../components/ReviewsSection")
+);
+
 export default function Homepage() {
-  return <></>;
+  return (
+    <>
+      <main>
+        <Hero />
+
+        <Suspense
+          fallback={
+            <div className="justify-center w-full flex py-32">
+              <LoadingSpinner extraStyles="bg-white border-lBlue" />
+            </div>
+          }
+        >
+          <LazyServicesSection />
+        </Suspense>
+
+        <Suspense
+          fallback={
+            <div className="justify-center w-full flex py-32">
+              <LoadingSpinner extraStyles="bg-white border-lBlue" />
+            </div>
+          }
+        >
+          <LazyMapSection />
+        </Suspense>
+
+        <Suspense
+          fallback={
+            <div className="justify-center w-full flex py-32">
+              <LoadingSpinner extraStyles="bg-white border-lBlue" />
+            </div>
+          }
+        >
+          <div className="mb-16 md:mb-0">
+            <LazyReviewsSection />
+          </div>
+        </Suspense>
+      </main>
+    </>
+  );
 }
 
 function Hero() {
