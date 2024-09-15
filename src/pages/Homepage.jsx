@@ -3,23 +3,12 @@ import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ServicesSection from "../components/ServicesSection";
-import MapSection from "../components/MapSection";
-import ReviewsSection from "../components/ReviewsSection";
+//import ServicesSection from "../components/ServicesSection";
+//import MapSection from "../components/MapSection";
+//import ReviewsSection from "../components/ReviewsSection";
 
 export default function Homepage() {
-  return (
-    <>
-      <main>
-        <Hero />
-        <ServicesSection />
-        <MapSection />
-        <div className="mb-16 md:mb-0">
-          <ReviewsSection />
-        </div>
-      </main>
-    </>
-  );
+  return <></>;
 }
 
 function Hero() {
