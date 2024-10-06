@@ -220,7 +220,7 @@ export default function App() {
           />
         </Routes>
         <ContactsFooter />
-        <div className="bg-neutral-100 flex justify-center pb-10">
+        {/* <div className="bg-neutral-100 flex justify-center pb-10">
           <p className="inline mr-1.5">Tinklalapį sukūrė:</p>
           <a
             href="https://kasparas.dev"
@@ -229,7 +229,7 @@ export default function App() {
           >
             kasparas.dev
           </a>
-        </div>
+        </div> */}
       </BrowserRouter>
     </ModalProvider>
   );
